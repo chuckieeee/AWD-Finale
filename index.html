@@ -1,15 +1,338 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document footlong</title>
-</head>
-<body>
-    <h1>testing header</h1>
-    <nav>
-        The Unbilibabol Baskitbol
-    </nav>
-    <button>Sa header na talaga toh</button>
-</body>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>M's SNEAKS</title>
+        <link rel="stylesheet" href="./Assets/CSS/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <div class ="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./Assets/images/mlogo.png" width="110px" height="105"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./Assets/WebPages/products.html">Products</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="./Assets/WebPages/account.html">Account</a></li>
+
+                    </ul>
+                </nav>
+                <a href="./Assets/WebPages/cart.html"><img src="./Assets/images/cart.png" width="30px" height="30px"></a>
+                <img src="./Assets/images/menu.png" class="menu-icon" onClick="menutoggle()" >
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>M's SNEAKS <br>On your feet!</h1>
+                    <p>Good shoes will take you Good Places.</p>
+                    <a href="./Assets/WebPages/products.html" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="./Assets/images/mlogo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <!------------------------------ featured categories------------------------------>
+        <div class="categories">
+            <div class="small-container">
+                <div class="row">
+                <div class="col-3">
+                    <img src="./Assets/images/Shoes_01.png">
+                </div>
+                <div class="col-3">
+                    <img src="./Assets/images/Shoes_02.png">
+                </div>
+                <div class="col-3">
+                    <img src="./Assets/images/Shoes_03.png">
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <!------------------------------ featured Products------------------------------>
+        <div class="small-container">
+            <h2 class="title" >Featured Products</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="./Assets/WebPages/products-details.html"><img src="./Assets/images/Shoes_04.png"></a>
+                        <a href="./Assets/WebPages/products-details.html"><h4>Adidas Samba OG Night Navy Gum</h4></a>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-half-o" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>P4,500</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="./Assets/WebPages/products-details.html"><img src="./Assets/images/Shoes_05.png"></a>
+                        <h4>Nike Air Fear of God 1 Black</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-half-o" ></i>
+                        </div>
+                        <p>P6,560</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="./Assets/WebPages/products-details.html"><img src="./Assets/images/Shoes_06.png"></a>
+                        <h4>Jordan 1 Retro Low Dior</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>P6,450</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="./Assets/WebPages/products-details.html"><img src="./Assets/images/Shoes_07.png"></a>
+                        <h4>Nike Book 1 Mirage</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>P5,500</p>
+                    </div>  
+                </div>
+            
+            
+             <h2 class="title" >Latest Products</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="./Assets/WebPages/products-details.html"><img src="./Assets/images/Shoes_08.png"></a>
+                        <h4>Jordan 1 Retro Low Golf Royal Toe</h4>
+                        <div class="rating">
+                            <!--(before this added awesome4 cdn font link to the head)added a cdn link by searching font awesome4 icon and from the site  search the star entering the first option and getting a link of this fa-star*-->
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-half-o" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>P7,300</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="./Assets/WebPages/products-details.html"><img src="./Assets/images/Shoes_09.png"></a>
+                        <h4>Jordan 1 Retro Low OG SP Travis Scott Black Phantom</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-half-o" ></i>
+                        </div>
+                        <p>P5,670</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="./Assets/WebPages/products-details.html"><img src="./Assets/images/Shoes_10.png"></a>
+                        <h4>Jordan 1 Retro Low OG SP Travis Scott Olive</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>P7,700</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="./Assets/WebPages/products-details.html"><img src="./Assets/images/Shoes_11.png"></a>
+                        <h4>Jordan 1 Retro Low OG SP Travis Scott Reverse Mocha</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>P5,600</p>
+                    </div>  
+                </div>
+            <!--new row for the latest product-->
+                <div class="row">
+                    <div class="col-4">
+                        <a href="./Assets/WebPages/products-details.html"><img src="./Assets/images/Shoes_04.png"></a>
+                        <h4>Adidas Samba OG Night Navy Gum</h4>
+                        <div class="rating">
+                            <!--(before this added awesome4 cdn font link to the head)added a cdn link by searching font awesome4 icon and from the site  search the star entering the first option and getting a link of this fa-star*-->
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-half-o" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>P6,600</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="./Assets/WebPages/products-details.html"><img src="./Assets/images/Shoes_05.png"></a>
+                        <h4>Nike Air Fear of God 1 Black</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-half-o" ></i>
+                        </div>
+                        <p>P8,900</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="./Assets/WebPages/products-details.html"><img src="./Assets/images/Shoes_06.png"></a>
+                        <h4>Jordan 1 Retro Low Dior</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>P5,800</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="./Assets/WebPages/products-details.html"><img src="./Assets/images/Shoes_07.png"></a>
+                        <h4>Nike Book 1 Mirage</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>P7,400</p>
+                    </div>  
+                </div>
+            </div>
+        
+        <!--------------------------`   offer   --------------------------------->
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="./Assets/images/mj.png" class="offer-img">
+                    </div>
+                    <div class="col-2">
+                        <p>Exclusively Available on M's SNEAKS</p>
+                        <h1>SNEAKIES COLLECTION</h1>
+                        <small> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quos alias, dignissimos hic eveniet nesciunt quaerat porro ullam asperiores pariatur voluptatum quam sapiente velit odit placeat eaque, ipsa fugiat autem. </small><br>
+                        <a href="./Assets/WebPages/products.html" class="btn">Buy Now &#8594;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!------------------------------Testimonial---------------------------------->
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left" ></i>
+                        <p>Absolutely thrilled with my new rep sneakers! They look and feel just like the real deal, and the price was unbeatable. Highly recommend this shop for anyone looking for quality replicas!</p>
+                        <div class="rating"> 
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <img src="./Assets/images/em.png">
+                        <h3>Emmanuel Mangasar</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left" ></i>
+                        <p>Impressed with the attention to detail on these rep sneakers. From the stitching to the materials, they're top-notch. Shipping was quick too! Will definitely be back for more.</p>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <img src="./Assets/images/dus.jpg">
+                        <h3>Dustin Callos</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left" ></i>
+                        <p>Great selection of rep sneakers at this shop. Got the Yeezy replicas and couldn't be happier. Comfortable fit and great quality for the price. A must-visit for sneakerheads!</p>
+                        <div class="rating"> 
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <img src="./Assets/images/nat.jpg">
+                        <h3>Alden Recharge</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!----------------------------------footer------------------------------------->
+        <div class ="footer">
+        <div class="container">
+            
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="./Assets/images/play-store.png" alt="">
+                        <img src="./Assets/images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./Assets/images/mlogo.png">
+                    <p>M's SNEAKS in your area!</p>
+                </div>
+                <div class="footer-col-3">
+                   <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./Assets/WebPages/products.html">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="./Assets/WebPages/account.html">Account</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/msneaksz">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/msneaks23?fbclid=IwAR3eYxG-1dfp_E2EGOLXwDwADOq4Qoe0GyFdlI3RT8JLvDFcBZu0_DOXjO0_aem_Ae2rUnosh9Hr8KGm1Nr85L047yAnK26Mh8I0Qm_T5sXz515woc4Cu0oiZGHVtiLWyoctZH1Yh8iIKFOIJsbjuV0J">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                     </ul>
+                </div>
+                
+            </div>
+            
+            <hr><!--horizontal line-->
+            <p class="copyright">Copyright 2024 - Snorlax Team ft Tinitigan ko</p>
+            
+        </div>
+    </div>
+        
+
+        <script src="./Assets/JS/script.js"></script>
+    </body>
 </html>
